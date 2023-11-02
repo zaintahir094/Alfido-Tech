@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class= "logo"> Logo</a>
+           <ul class="menu-link">
+            <span id="close-menu-btn" class="material-symbols-outlined">Close
+            </span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">SignUp</a></li>
+           </ul>  
+           <span id="hamburger-menu" class="material-symbols-outlined">Menu</span>
+
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="content">
+          <h2>We must use time as a tool, not as a couch.</h2>  
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Quos id architecto debitis unde explicabo dolore eveniet.</p>
+           <button>Contact Now</button>
+        </div>
+    </section>
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-menu");
+        const closeMenubtn = document.querySelector("#close-menu-btn");
+
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+        closeMenubtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
